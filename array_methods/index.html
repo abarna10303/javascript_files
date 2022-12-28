@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <style>
+        thead
+        {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+        }
+        th,td
+        {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <table border="all">
+        <thead>
+            <th>S.No</th>
+            <th>Methods</th>
+            <th>Description</th>
+            <th>Program</th>
+            <th>Output</th>
+        </thead>
+        <tbody>
+            <td>1</td>
+            <td>concat()</td>
+            <td>concat from more than one Array</td>
+            <td>let a=[1,2,3];<br>
+                let b=[4,5,6];<br>
+                document.write(a.cancat(b));
+            </td>
+            <td>[1,2,3,4,5,6]</td>
+            <tr></tr>
+            <td>2</td>
+            <td>pop()</td>
+            <td>This method removes the last element from an array </td>
+            <td>let a=[1,2,3];<br>
+                let b=[4,5,6];<br>
+                document.write(a.pop());<br>
+                document.write(a);
+            </td>
+            <td>[1,2]</td>
+            <tr></tr>
+            <td>3</td>
+            <td>push()</td>
+            <td>This method adds one or more elements to the end of an array </td>
+            <td>let a=[1,2,3];<br>
+                let b=[4,5,6];<br>
+                document.write(a.push(8,9));<br>
+                document.write(a);
+            </td>
+            <td>[1,2,3,8,9]</td>
+            <tr></tr>
+            <td>4</td>
+            <td>shift()</td>
+            <td>This method removes the first element from an array </td>
+            <td>let a=[1,2,3];<br>
+                let b=[4,5,6];<br>
+                document.write(a.shift());<br>
+                document.write(a);
+            </td>
+            <td>[2,3]</td>
+            <tr></tr>
+            <td>5</td>
+            <td>slice()</td>
+            <td>This method returns a shallow copy of a portion of an array into a new array </td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.slice(1));<br>
+                document.write(a);
+            </td>
+            <td>[2,3,5,6]</td>
+            <tr></tr>
+            <td>6</td>
+            <td>reverse()</td>
+            <td>This method reverses an array </td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.reverse());<br>
+                document.write(a);
+            </td>
+            <td>[6,5,3,2,1]</td>
+            <tr></tr>
+            <td>7</td>
+            <td>unshift()</td>
+            <td>This method adds one or more elements</td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.unshift(7));<br>
+                document.write(a);
+            </td>
+            <td>[7,1,2,3,5,6]</td>
+            <tr></tr>
+            <td>8</td>
+            <td>toString()</td>
+            <td>This method returns a string</td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.toString());<br>
+                document.write(a);
+            </td>
+            <td>1,2,3,5,6<br>
+                1,2,3,5,6</td>
+            <tr></tr>
+            <td>9</td>
+            <td>lastIndexOf()</td>
+            <td>This method returns the last index at which a given element can be found in the array</td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.lastIndexOf(5));<br>
+                document.write(a);
+            </td>
+            <td>3 <br>
+                [1,2,3,5,6]</td>
+            <tr></tr>
+            <td>10</td>
+            <td>toLocaleString()</td>
+            <td>This  method returns a string representing the elements of the array. </td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.toLocaleString());<br>
+                document.write(a);
+            </td>
+            <td>1,2,3,5,6<br>
+                1,2,3,5,6</td>
+            <tr></tr>
+             <td>11</td>
+            <td>replace()</td>
+            <td>This method returns a new string with the value(s) replaced. </td>
+            <td>let a=[1,2,3,5,6];<br>
+                let b=[4,5,6];<br>
+                document.write(a.replace('5',4));<br>
+            </td>
+            <td>1,2,3,4,6<br></td>
+            <tr></tr>
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

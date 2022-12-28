@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        th{
+            padding: 15px;
+        }
+        td{
+            padding: 15px;
+        }
+        th:nth-child(odd)
+        {
+            background-color: aqua;
+        }
+        td:nth-child(even)
+        {
+            background-color:azure;
+        }
+        td:nth-child(odd)
+        {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <table >
+        <thead>
+            <th>S.No</th>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Input</th>
+            <th>Output</th>
+        </thead>
+        <tbody>
+            <td>1</td>
+            <td>getDate()</td>
+            <td>Returns the day of the month (1–31) for the specified date according to local time.</td>
+            <td>const birthday = new Date('August 19, 1975 23:15:30');<br>
+                const date1 = birthday.getDate();<br>
+                
+                console.log(date1);</td>
+            <td><script>
+                const birthday = new Date('August 19, 1975 23:15:30');
+                const date1 = birthday.getDate();
+                document.write(date1);
+            </script></td>
+            <tr></tr>
+            <td>2</td>
+            <td>getDay()</td>
+            <td>Returns the day of the week (0–6) for the specified date according to local time.</td>
+            <td>const birthday = new Date('August 19, 1975 23:15:30');<br>
+                const day1 = birthday.getDay();   <br>            
+                console.log(day1);</td>
+            <td><script>
+                const birthday1 = new Date('August 19, 1975 23:15:30');
+                const day1 = birthday1.getDay();
+                
+                document.write(day1);
+            </script></td>
+            <tr></tr>
+            <td>3</td>
+            <td>getFullYear()</td>
+            <td>Returns the year (4 digits for 4-digit years) of the specified date according to local time.</td>
+            <td>const moonLanding = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding.getFullYear());</td>
+            <td><script>
+                const moonLanding = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding.getFullYear());
+            </script></td>
+            <tr></tr>
+            <td>4</td>
+            <td>getHours()</td>
+            <td>Returns the hour (0–23) in the specified date according to local time.</td>
+            <td>const moonLanding1 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding1.getHours());</td>
+            <td><script>
+                const moonLanding1 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding1.getHours());
+            </script></td>
+            <tr></tr>
+            <td>5</td>
+            <td>getMilliseconds()</td>
+            <td>Returns the milliseconds (0–999) in the specified date according to local time.</td>
+            <td>const moonLanding2 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding2.getMilliseconds());</td>
+            <td><script>
+                const moonLanding2 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding2.getMilliseconds());
+            </script></td>
+            <tr></tr>
+            <td>6</td>
+            <td>getMinutes()</td>
+            <td>Returns the minutes (0–59) in the specified date according to local time.</td>
+            <td>const moonLanding3 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding3.getMinutes());</td>
+            <td><script>
+                const moonLanding3 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding3.getMinutes());
+            </script></td>
+            <tr></tr>
+            <td>7</td>
+            <td>getMonth()</td>
+            <td>Returns the month (0–11) in the specified date according to local time</td>
+            <td>const moonLanding3 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding3.getMonth());</td>
+            <td><script>
+                const moonLanding4 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding4.getMonth());
+            </script></td>
+            <tr></tr>
+            <td>8</td>
+            <td>getSeconds()</td>
+            <td>Returns the seconds (0–59) in the specified date according to local time.</td>
+            <td>const moonLanding3 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding3.getSeconds());</td>
+            <td><script>
+                const moonLanding5 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding5.getSeconds());
+            </script></td>
+            <tr></tr>
+            <td>9</td>
+            <td>getTime()</td>
+            <td>Returns the numeric value of the specified date as the number of milliseconds since January 1, 1970, 00:00:00 UTC.</td>
+            <td>const moonLanding3 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding3.getTime());</td>
+            <td><script>
+                const moonLanding6 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding6.getTime());
+            </script></td>
+            <tr></tr>
+            <td>10</td>
+            <td>getTimezoneOffset()</td>
+            <td>Returns the time-zone offset in minutes for the current locale.</td>
+            <td>const moonLanding3 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding3.getTimezoneOffset());</td>
+            <td><script>
+                const moonLanding7 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding7.getTimezoneOffset());
+            </script></td>
+            <tr></tr>
+            <td>11</td>
+            <td>getYear()</td>
+            <td>Returns the year </td>
+            <td>const moonLanding3 = new Date('July 20, 69 00:20:18');<br>
+                console.log(moonLanding3.getYear());</td>
+            <td><script>
+                const moonLanding8 = new Date('July 20, 69 00:20:18');
+                document.write(moonLanding8.getYear());
+            </script></td>
+            <tr></tr>
+            <td>1</td>
+            <td>setDate()</td>
+            <td>Sets the day of the month for a specified date according to local time </td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setDate(24);<br> 
+                console.log(event.getDate());</td>
+            <td><script>
+                const event = new Date('August 19, 1975 23:15:30');
+                event.setDate(24);
+                document.write(event.getDate());
+            </script></td>
+            <tr></tr>
+            <td>2</td>
+            <td>setFullYear()</td>
+            <td>Sets the full year (e.g. 4 digits for 4-digit years) for a specified date according to local time.</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setFullYear(1969);<br> 
+                console.log(event.setFullYear());</td>
+            <td><script>
+                const event1 = new Date('August 19, 1975 23:15:30');
+                event1.setFullYear(1969);
+                document.write(event1.getFullYear());
+            </script></td>
+            <tr></tr>
+            <td>3</td>
+            <td>setHours()</td>
+            <td>Sets the hours for a specified date according to local time</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setHours(10);<br> 
+                console.log(event.setHours());</td>
+            <td><script>
+                const event2 = new Date('August 19, 1975 23:15:30');
+                event2.setHours(10);
+                document.write(event2.getHours());
+            </script></td>
+            <tr></tr>
+            <td>4</td>
+            <td>setMilliseconds()</td>
+            <td>Sets the hours for a specified date according to local time</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setMilliseconds(50);<br> 
+                console.log(event.setMilliseconds());</td>
+            <td><script>
+                const event3 = new Date('August 19, 1975 23:15:30');
+                event3.setMilliseconds(50);
+                document.write(event3.getMilliseconds());
+            </script></td>
+            <tr></tr>
+            <td>5</td>
+            <td>setMinutes()</td>
+            <td>Sets the hours for a specified date according to local time</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setMinutes(10);<br> 
+                console.log(event.setMinutes());</td>
+            <td><script>
+                const event43 = new Date('August 19, 1975 23:15:30');
+                event43.setMinutes(10);
+                document.write(event43.getMinutes());
+            </script></td>
+            <tr></tr>
+            <td>6</td>
+            <td>setMonth()</td>
+            <td>Sets the month for a specified date according to local time.</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setMonth('January');<br> 
+                console.log(event.getMonth());</td>
+            <td><script>
+                const event53 = new Date('August 19, 1975 23:15:30');
+                event53.setMonth(3);
+                document.write(event53.getMonth());
+            </script></td>
+            <tr></tr>
+            <td>7</td>
+            <td>setSeconds()</td>
+            <td>Sets the seconds for a specified date according to local time.</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setSeconds(10);<br> 
+                console.log(event.getSeconds());</td>
+            <td><script>
+                const event5 = new Date('August 19, 1975 23:15:30');
+                event5.setSeconds(10);
+                document.write(event5.getSeconds());
+            </script></td>
+            <tr></tr>
+            <td>8</td>
+            <td>setTime()</td>
+            <td>Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC. Use negative numbers for times prior.</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setTime(12);<br> 
+                console.log(event.getTime());</td>
+            <td><script>
+                const event6 = new Date('August 19, 1975 23:15:30');
+                event6.setTime(12);
+                document.write(event6.getTime());
+            </script></td>
+            <tr></tr>
+            <td>9</td>
+            <td>setYear()</td>
+            <td>Sets the year (usually 2–3 digits) for a specified date according to local time</td>
+            <td>const event = new Date('August 19, 1975 23:15:30');<br>
+                event.setYear(72);<br> 
+                console.log(event.getYear());</td>
+            <td><script>
+                const event4 = new Date('August 19, 1975 23:15:30');
+                event4.setYear(72);
+                document.write(event4.getYear());
+            </script></td>
+            <tr></tr>
+            <td>1</td>
+            <td>toDateString()</td>
+            <td>Returns the "date" portion of the Date as a human-readable string like 'Thu Apr 12 2018'.</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(event.toDateString());</td>
+            <td><script>
+                const event7 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(event7.toDateString());
+            </script></td>
+            <tr></tr>
+            <td>2</td>
+            <td>toISOString()</td>
+            <td>Converts a date to a string following the ISO 8601 Extended Format.</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(event.toISOString());</td>
+            <td><script>
+                const event8 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(event8.toISOString());
+            </script></td>
+            <tr></tr>
+            <td>3</td>
+            <td>toJSON()</td>
+            <td>Returns a string representing the Date using toISOString(). Intended for use by JSON.stringify().</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(event.toJSON());</td>
+            <td><script>
+                const even = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(even.toJSON());
+            </script></td>
+            <tr></tr>
+            <td>4</td>
+            <td>toGMTString()</td>
+            <td>Returns a string representing the Date based on the GMT (UTC) time zone. Use toUTCString()* instead.</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(event.toGMTString());</td>
+            <td><script>
+                const even1 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(even1.toGMTString());
+            </script></td>
+            <tr></tr>
+            <td>5</td>
+            <td>toLocaleDateString()</td>
+            <td>Returns a string representing the Date based on the GMT (UTC) time zone. Use toUTCString()* instead.</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(toLocaleDateString());</td>
+            <td><script>
+                const even2 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(even2.toLocaleDateString());
+            </script></td>
+            <tr></tr>
+            <td>6</td>
+            <td>toLocaleString()</td>
+            <td>Returns a string with a locality-sensitive representation of this Date. Overrides the Object.prototype.toLocaleString() method.</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(toLocaleString());</td>
+            <td><script>
+                const even3 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(even3.toLocaleString());
+            </script></td>
+            <tr></tr>
+            <td>7</td>
+            <td>toLocaleTimeString()</td>
+            <td>Returns a string with a locality-sensitive representation of the time portion of this date, based on system settings.</td>
+            <td>const event4 = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(even4.toLocaleTimeString());</td>
+            <td><script>
+                const even4 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(even4.toLocaleTimeString());
+            </script></td>
+            <tr></tr>
+            <td>8</td>
+            <td>toString()</td>
+            <td>Returns a string representing the specified Date object. Overrides the Object.prototype.toString()* method.</td>
+            <td>const event = new Date(1993, 6, 28, 14, 39, 7);<br>
+                console.log(even4.toString());</td>
+            <td><script>
+                const even5 = new Date(1993, 6, 28, 14, 39, 7);
+                document.write(even5.toString());
+            </script></td>
+            <tr></tr>
+        </tbody>
+    </table>
+</body>
+</html>
